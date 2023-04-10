@@ -28,25 +28,29 @@ cout<<endl;
 
 
 }
-//for(int z=1;z<=9;z++){
-//	if((z==8)||(z==9)){
-//	int a=1;
-//	do{
-//		//for(int a=1;a<=8;a++)
-//		cout<<"*"<<" ";
-//	}while(a<=8);}
-//	 else
-//	for(int x=1;x<=z+1;x++){
-//		cout<<"*"<<" ";
-//	}
-//	for(int c=b;c>=1;c=b-2){
-//		cout<<" ";
-//	}
-//	for(int d=1;d<=z+1;d++){
-//		cout<<"*"<<" ";
-//	}
-//	
-//}
+for(int z=1;z<=9;z++){
+	if((z==8)||(z==9)){
+	int a=1;
+	do{
+		cout<<"*"<<" ";
+		a++;
+	}while(a<=8);}
+	 else
+	for(int x=1;x<=z+1;x++){
+		cout<<"*"<<" ";
+	}
+	for(int c=2*(9-(z+1));c>=1;c--){
+		cout<<"  ";
+	
+	}
+		if(z==8)
+		cout<<"  ";
+	for(int d=1;d<=z+1;d++){
+		cout<<"*"<<" ";
+		
+	}
+cout<<endl;	
+}
 
     
    return 0;}
